@@ -1,0 +1,9 @@
+/*Light - 100*/
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('HelveticaNeueCyr-Light.woff2') format('woff2'),
+	url('HelveticaNeueCyr-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
