@@ -1,0 +1,1 @@
+require('./section-1.scss');

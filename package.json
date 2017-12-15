@@ -4,6 +4,7 @@
   "description": "Webpack config for Greenwich",
   "main": "./webpack/webpack.config.js",
   "dependencies": {
+    "fullpage.js": "^2.9.5",
     "jquery": "^3.2.1",
     "parallax-js": "^3.1.0",
     "sanitize.css": "^5.0.0"
