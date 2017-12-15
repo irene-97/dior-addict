@@ -9,5 +9,8 @@ require('fullpage.js/dist/jquery.fullpage.css');
 require('fullpage.js/dist/jquery.fullpage.js');
 
 /*Components*/
+require('../components/HelveticaNeue/HelveticaNeue.css');
+require('../components/Univers/Univers.css');
 require('../components/common/common.js');
 require('../components/fullpage/fullpage.js');
+require('../components/section-1/section-1.js');
