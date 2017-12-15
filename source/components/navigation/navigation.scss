@@ -1,0 +1,66 @@
+@import "../common/_variables.scss";
+
+.navigation {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 76px;
+	width: 100%;
+	height: 63px;
+	background-color: $color-amour;
+	box-shadow: 0 4px 7px rgba($color-black, 0.1);
+
+	li {
+		position: relative;
+		display: inline-block;
+		margin-top: 14px;
+		border-radius: 50%;
+		border: solid 10px $color-amour;
+		width: 36px;
+		height: 36px;
+		background-image: linear-gradient($color-cranberry, $color-froly);
+
+		a {
+			position: absolute;
+			left: -10px;
+			right: -10px;
+			top: -10px;
+			bottom: -10px;
+		}
+
+		&.active-point {
+			&::before {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				content: "";
+				display: block;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+				background-color: $color-white;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		&:hover {
+			background-image: linear-gradient(darken($color-cranberry, 7%), darken($color-froly, 7%));
+		}
+	}
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 76px;
+		right: 76px;
+		content: "";
+		display: block;
+		height: 1px;
+		background-color: $color-azalea;
+		transform: translateY(-50%);
+	}
+}

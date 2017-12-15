@@ -1,0 +1,79 @@
+@import "../common/_variables.scss";
+
+.section--2 {
+	.fp-tableCell {
+		vertical-align: top;
+	}
+
+	.section__categories {
+		margin-top: 112px;
+		margin-left: 75px;
+	}
+
+	.section__category {
+		position: relative;
+		display: inline-block;
+		margin-right: 97px;
+		border-radius: 30px;
+		border: solid 3px $color-white;
+		padding: 23px 18px 18px 72px;
+		min-width: 217px;
+		font-size: 17px;
+		text-decoration: none;
+		color: $color-cranberry;
+		background-color: $color-chablis;
+		box-shadow: 0 1px 10px rgba($color-black, 0.1);
+		transition: background-color 0.1s ease-in, border 0.1s ease-in;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 12px;
+			top: 11px;
+			display: block;
+			border-radius: 50%;
+			width: 38px;
+			height: 38px;
+			background-image: linear-gradient(45deg, $color-brink-pink, $color-pink-salmon);
+			box-shadow: 1px 3px 8px rgba($color-cranberry, 0.4);
+		}
+
+		&:hover {
+			border: solid 3px $color-brink-pink;
+			background-color: $color-brink-pink;
+			color: $color-white;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 12px;
+				top: 11px;
+				z-index: 2;
+				display: block;
+				border-radius: 50%;
+				border: solid 2px $color-pink-salmon;
+				width: 38px;
+				height: 38px;
+				background-image: linear-gradient(45deg, $color-brink-pink, $color-pink-salmon);
+				box-shadow: 0 3px 8px rgba($color-cranberry, 0.4);
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: -2px;
+				z-index: 1;
+				display: block;
+				border-radius: 50%;
+				width: 61px;
+				height: 61px;
+				background-image: linear-gradient(90deg, $color-brink-pink, $color-pink-salmon);
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
