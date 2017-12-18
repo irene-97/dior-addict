@@ -8,6 +8,10 @@ window.jQuery = window.$ = require('jquery/dist/jquery.js');
 require('fullpage.js/dist/jquery.fullpage.css');
 require('fullpage.js/dist/jquery.fullpage.js');
 
+/*Slick-carousel*/
+require('slick-carousel/slick/slick.js');
+require('slick-carousel/slick/slick.scss');
+
 /*Components*/
 require('../components/HelveticaNeue/HelveticaNeue.css');
 require('../components/Univers/Univers.css');
