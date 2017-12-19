@@ -1,6 +1,6 @@
 require('./_section-2.scss');
 
-$('.section__col-1 .section__slider').slick({
+$('.section--2 .section__col-1 .section__slider').slick({
 	fade: true,
 	appendArrows: ".section__col-1",
 });

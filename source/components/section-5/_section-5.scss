@@ -42,12 +42,18 @@
 				line-height: 65px;
 				letter-spacing: -2px;
 				color: $color-black;
+				transform: translateY(-30px);
+				opacity: 0;
+				transition: transform 0.6s ease 0.2s, opacity 0.6s ease 0.2s;
 			}
 
 			&__description {
 				font-size: 17px;
 				line-height: 24px;
 				color: $color-black;
+				transform: translateY(30px);
+				opacity: 0;
+				transition: transform 0.6s ease 0.2s, opacity 0.6s ease 0.2s;
 
 				p {
 					margin-bottom: 24px;
@@ -102,6 +108,18 @@
 				margin-left: 3px;
 				background: url("screen5-pink-arrow-right.png");
 			}
+		}
+	}
+
+	&.animate {
+		.section__description-slider__slide__title {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.section__description-slider__slide__description {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 }
