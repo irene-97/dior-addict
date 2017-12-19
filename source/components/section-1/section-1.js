@@ -1,1 +1,1 @@
-require('./section-1.scss');
+require('./_section-1.scss');

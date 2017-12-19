@@ -1,2 +1,20 @@
 .section.section--4
-	| Some section
+	.section__slider
+		.section__slide(style=`background-image: url(${require("./screen4-slide.jpg")});`)
+			.section__slide__wrapper
+				.section__slide__title
+					| History #[br] of creation
+				a.section__slide__link(href="")
+					| Watch
+		.section__slide(style=`background-image: url(${require("./screen4-slide.jpg")});`)
+			.section__slide__wrapper
+				.section__slide__title
+					| The best #[br] products
+				a.section__slide__link(href="")
+					| Watch
+		.section__slide(style=`background-image: url(${require("./screen4-slide.jpg")});`)
+			.section__slide__wrapper
+				.section__slide__title
+					| Our famous #[br] customers
+				a.section__slide__link(href="")
+					| Watch

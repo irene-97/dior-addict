@@ -1,4 +1,4 @@
-require('./fullpage.scss');
+require('./_fullpage.scss');
 
 $(document).ready(() => {
 	$('.fullpage').fullpage({

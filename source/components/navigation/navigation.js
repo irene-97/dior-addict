@@ -1,1 +1,1 @@
-require('./navigation.scss');
+require('./_navigation.scss');

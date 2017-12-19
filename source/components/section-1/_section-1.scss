@@ -35,6 +35,7 @@
 		width: 79px;
 		height: 79px;
 		background-image: radial-gradient($color-pot-pourri 20%, $color-carousel-pink);
+		box-shadow: inset 0 0 29px rgba($color-black-rose, 0.12);
 
 		&::before {
 			position: absolute;
