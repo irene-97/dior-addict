@@ -1,0 +1,107 @@
+@import "../common/_variables.scss";
+
+.section--5 {
+	background: url("screen5.png") center no-repeat;
+	background-size: cover;
+
+	.fp-tableCell {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.section__image-slider {
+		overflow: hidden;
+		margin-left: 124 / 1076 * 100vh;
+		padding-top: 194 / 1076 * 100vh;
+		width: 789 / 1076 * 100vh;
+
+		&__slide {
+			display: inline-block;
+			border-radius: 50%;
+			border: solid 30 / 1076 * 100vh $color-white;
+			width: 789 / 1076 * 100vh;
+			height: 789 / 1076 * 100vh;
+			background: 50% 50% no-repeat;
+			background-size: cover;
+			background-clip: border-box;
+		}
+	}
+
+	.section__description-slider {
+		margin-top: 382px;
+		margin-right: 198px;
+		width: 600px;
+
+		&__slide {
+			padding-top: 20px;
+
+			&__title {
+				margin-bottom: 28px;
+				width: 350px;
+				font-size: 75px;
+				line-height: 65px;
+				letter-spacing: -2px;
+				color: $color-black;
+			}
+
+			&__description {
+				font-size: 17px;
+				line-height: 24px;
+				color: $color-black;
+
+				p {
+					margin-bottom: 24px;
+				}
+			}
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 193px;
+		z-index: 2;
+		outline: none;
+		border-radius: 50%;
+		border: solid 3px $color-white;
+		width: 79px;
+		height: 79px;
+		font-size: 0;
+		background-image: radial-gradient($color-carousel-pink 50%, $color-pot-pourri);
+		box-shadow: inset 3px 0 29px rgba($color-black-rose, 0.12), 0 1px 10px rgba($color-black, 0.1);
+		transform: translateY(-50%);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			margin-top: 3px;
+			width: 12px;
+			height: 25px;
+			transform: translate(-50%, -50%);
+		}
+
+		&:hover {
+			background-image: radial-gradient(darken($color-pot-pourri, 3%), darken($color-carousel-pink, 3%));;
+		}
+
+		&.slick-prev {
+			left: -141px;
+
+			&::before {
+				margin-left: -2px;
+				background: url("screen5-pink-arrow-left.png");
+			}
+		}
+
+		&.slick-next {
+			right: -141px;
+
+			&::before {
+				margin-left: 3px;
+				background: url("screen5-pink-arrow-right.png");
+			}
+		}
+	}
+}

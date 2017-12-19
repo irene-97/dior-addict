@@ -55,7 +55,7 @@
 		height: 79px;
 		font-size: 0;
 		background-image: radial-gradient($color-carousel-pink 50%, $color-pot-pourri);
-		box-shadow: inset 3px 0 29px rgba($color-black-rose, 0.12);
+		box-shadow: inset 3px 0 29px rgba($color-black-rose, 0.12), 0 1px 10px rgba($color-black, 0.1);
 		transform: translateY(-50%);
 
 		&::before {
