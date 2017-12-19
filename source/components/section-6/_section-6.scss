@@ -1,0 +1,87 @@
+@import "../common/_variables.scss";
+
+.section--6 {
+	background: url("screen6.png") bottom right no-repeat;
+
+	.fp-tableCell {
+		vertical-align: top;
+	}
+
+	.section__content {
+		margin-top: 277px;
+		margin-left: 222px;
+
+		&__title {
+			margin-bottom: 22px;
+			width: 435px;
+			font-size: 75px;
+			line-height: 65px;
+			letter-spacing: -2px;
+			color: $color-black;
+		}
+
+		&__text {
+			width: 435px;
+			font-size: 17px;
+			line-height: 24px;
+			color: $color-black;
+		}
+
+		&__contacts {
+			margin-top: 37px;
+			width: 550px;
+
+			&__card {
+				display: flex;
+				margin-bottom: 32px;
+				box-shadow: 2px 3px 7px rgba($color-black, 0.05);
+
+				&__pin {
+					position: relative;
+					margin: 8px;
+					width: 187px;
+					height: 160px;
+					background-color: $color-lavender-blush;
+
+					&::before {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						display: block;
+						width: 64px;
+						height: 81px;
+						background: url("screen6-pin.png") center no-repeat;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				&__data {
+					padding: 47px 38px 0;
+
+					&__title,
+					&__adress,
+					&__phone {
+						font-size: 17px;
+						line-height: 24px;
+						color: $color-black;
+					}
+
+					&__title {
+						text-transform: uppercase;
+					}
+
+					&__phone {
+						span {
+							color: $color-cranberry;
+						}
+					}
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
