@@ -13,6 +13,9 @@
 	height: 63px;
 	background-color: $color-amour;
 	box-shadow: 0 4px 7px rgba($color-black, 0.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
 
 	li {
 		position: relative;
@@ -62,5 +65,10 @@
 		height: 1px;
 		background-color: $color-azalea;
 		transform: translateY(-50%);
+	}
+
+	&--visible {
+		opacity: 1;
+		visibility: visible;
 	}
 }
