@@ -20,6 +20,7 @@ require('../components/navigation/navigation.js');
 require('../components/fullpage/fullpage.js');
 require('../components/section-1/section-1.js');
 require('../components/section-2/section-2.js');
+require('../components/section-3/section-3.js');
 require('../components/section-4/section-4.js');
 require('../components/section-5/section-5.js');
 require('../components/section-6/section-6.js');

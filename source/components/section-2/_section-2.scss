@@ -121,6 +121,7 @@
 
 	.section__slide {
 		position: relative;
+		overflow: hidden;
 		z-index: 5;
 		display: inline-block;
 		margin: 0 auto;
