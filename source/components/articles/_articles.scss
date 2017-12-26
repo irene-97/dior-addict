@@ -1,11 +1,11 @@
 @import "../common/_variables.scss";
 
-.section--4 {
-	.section__slider {
+.articles {
+	&__slider {
 		height: 100vh;
 	}
 
-	.section__slide {
+	&__slide {
 		position: relative;
 		display: inline-block;
 		height: 100vh;
@@ -98,7 +98,7 @@
 	}
 
 	&.animate {
-		.section__slide__wrapper {
+		.articles__slide__wrapper {
 			opacity: 1;
 			transform: translateY(0);
 		}

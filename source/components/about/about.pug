@@ -1,0 +1,31 @@
+.section.about
+	.about__col-1
+		.about__text
+			.about__text__title
+				| Flawless stick
+			.about__text__description
+				p
+					| Dior ushers in a new era in lip makeup with the breakthrough creation
+					| of a lipstick that boasts a hydra-gel core with a top coat effect for sensational mirror shine. Application after application, it works like a top coat, adding
+					| an extra dose of shine and lasting colour with unbelievable comfort.
+				p
+					| Dior ushers in a new era in lip makeup with the breakthrough creation
+					| of a lipstick that boasts a hydra-gel core with a top coat effect.
+				p
+					| Dior ushers in a new era in lip makeup with the breakthrough creation
+					| of a lipstick that boasts a hydra-gel core with a top coat effect.
+	.about__col-2
+		.about__slider
+			.about__slider__arc(data-for-item="1")
+				svg(viewBox="0 0 700 700")
+					use(xlink:href='images/sprite.svg#arc')
+			.about__slider__navigation
+				button.about__slider__button.about__slider__button--active(type="button")
+				button.about__slider__button(type="button")
+				button.about__slider__button(type="button")
+				button.about__slider__button(type="button")
+			.about__slider__items
+				.about__slider__item.about__slider__item--active(style=`background-image: url(${require("./screen3-slide1.png")});`)
+				.about__slider__item(style=`background-image: url(${require("./screen3-slide2.png")});`)
+				.about__slider__item(style=`background-image: url(${require("./screen3-slide3.png")});`)
+				.about__slider__item(style=`background-image: url(${require("./screen3-slide4.png")});`)

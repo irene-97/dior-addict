@@ -2,7 +2,7 @@ require('./_fullpage.scss');
 
 $(document).ready(() => {
 	$('.fullpage').fullpage({
-		anchors: ['1', '2', '3', '4', '5', '6'],
+		anchors: ['home', 'assortment', 'about', 'articles', 'advantages', 'contacts'],
 		menu: '.navigation',
 		onLeave(index, nextIndex) {
 			$('.navigation').toggleClass('navigation--visible', nextIndex !== 1);

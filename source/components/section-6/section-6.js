@@ -1,1 +1,0 @@
-require('./_section-6.scss');

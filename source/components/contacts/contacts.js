@@ -1,0 +1,1 @@
+require('./_contacts.scss');

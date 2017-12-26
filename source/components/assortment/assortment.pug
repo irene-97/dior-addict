@@ -1,0 +1,32 @@
+.section.assortment
+	.assortment__categories
+		a.assortment__category(href="#")
+			| Baby Doll
+		a.assortment__category(href="#")
+			| Rock`n`Roll
+		a.assortment__category(href="#")
+			| Glamour
+	.assortment__content
+		.assortment__col-1
+			.assortment__slider
+				.assortment__slide(style=`background-image: url(${require("./slide.png")});`)
+				.assortment__slide(style=`background-image: url(${require("./slide2.png")});`)
+				.assortment__slide(style=`background-image: url(${require("./slide3.png")});`)
+				.assortment__slide(style=`background-image: url(${require("./slide4.png")});`)
+			.assortment__preview.assortment__preview--1
+				.assortment__preview__image.assortment__preview__image--1(style=`background-image: url(${require("./preview1.jpg")});`)
+			.assortment__preview.assortment__preview--2
+				.assortment__preview__image.assortment__preview__image--2(style=`background-image: url(${require("./preview2.jpg")});`)
+			.assortment__preview.assortment__preview--3
+				.assortment__preview__image.assortment__preview__image--3(style=`background-image: url(${require("./preview3.jpg")});`)
+			.assortment__preview.assortment__preview--4
+				.assortment__preview__image.assortment__preview__image--4(style=`background-image: url(${require("./preview4.jpg")});`)
+		.assortment__col-2
+			.assortment__text
+				.assortment__text__title
+					| Baby Doll
+				.assortment__text__description
+					| Dior ushers in a new era in lip makeup with the breakthrough creation of a lipstick that
+					| boasts a hydra-gel core with a top coat effect for sensational mirror shine.#[br]
+					| Application after application, it works like a top coat, adding an extra dose of shine and lasting colour
+					| with unbelievable comfort.

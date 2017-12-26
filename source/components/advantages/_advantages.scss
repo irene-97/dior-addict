@@ -1,6 +1,6 @@
 @import "../common/_variables.scss";
 
-.section--5 {
+.advantages {
 	background: url("screen5.png") center no-repeat;
 	background-size: cover;
 
@@ -9,7 +9,7 @@
 		justify-content: space-between;
 	}
 
-	.section__image-slider {
+	&__image-slider {
 		overflow: hidden;
 		margin-left: 124 / 1076 * 100vh;
 		padding-top: 194 / 1076 * 100vh;
@@ -27,7 +27,7 @@
 		}
 	}
 
-	.section__description-slider {
+	&__description-slider {
 		margin-top: 382px;
 		margin-right: 198px;
 		width: 600px;
@@ -112,12 +112,12 @@
 	}
 
 	&.animate {
-		.section__description-slider__slide__title {
+		.advantages__description-slider__slide__title {
 			opacity: 1;
 			transform: translateY(0);
 		}
 
-		.section__description-slider__slide__description {
+		.advantages__description-slider__slide__description {
 			opacity: 1;
 			transform: translateY(0);
 		}

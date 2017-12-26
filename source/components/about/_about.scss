@@ -1,9 +1,9 @@
 @import "../common/_variables.scss";
 
-.section--3 {
+.about {
 	display: flex;
 
-	.section__col-2 {
+	&__col-2 {
 		display: flex;
 		align-items: center;
 		padding-top: 63px;
@@ -14,7 +14,7 @@
 		justify-content: space-between;
 	}
 
-	.section__text {
+	&__text {
 		margin-top: 442px;
 		margin-left: 217px;
 		width: 600px;
@@ -40,7 +40,7 @@
 		}
 	}
 
-	.section__slider {
+	&__slider {
 		position: relative;
 		overflow: hidden;
 		margin-right: 137px;
@@ -190,12 +190,12 @@
 	}
 
 	&.animate {
-		.section__text__title {
+		.about__text__title {
 			opacity: 1;
 			transform: translateY(0);
 		}
 
-		.section__text__description {
+		.about__text__description {
 			opacity: 1;
 			transform: translateY(0);
 		}

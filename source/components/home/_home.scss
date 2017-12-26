@@ -4,7 +4,7 @@
 	height: 100%;
 	background: url("screen1.jpg") center no-repeat;
 
-	.section__content {
+	&__content {
 		position: absolute;
 		bottom: 41px;
 		left: 50%;
@@ -14,11 +14,11 @@
 		transition: transform 0.6s ease 0.2s, opacity 0.6s ease 0.2s;
 	}
 
-	.section__logo {
+	&__logo {
 		text-align: center;
 	}
 
-	.section__text {
+	&__text {
 		font-family: $font-family-helvetica-neue;
 		font-weight: 300;
 		font-size: 83px;
@@ -28,7 +28,7 @@
 		color: $color-white;
 	}
 
-	.section__arrow {
+	&__arrow {
 		position: relative;
 		display: inline-block;
 		margin-top: 30px;
@@ -58,7 +58,7 @@
 	}
 
 	&.animate {
-		.section__content {
+		.home__content {
 			opacity: 1;
 			transform: translateX(-50%) translateY(0);
 		}

@@ -1,13 +1,13 @@
 @import "../common/_variables.scss";
 
-.section--6 {
+.contacts{
 	background: url("screen6.png") bottom right no-repeat;
 
 	.fp-tableCell {
 		vertical-align: top;
 	}
 
-	.section__content {
+	&__content {
 		margin-top: 277px;
 		margin-left: 222px;
 
@@ -92,12 +92,12 @@
 	}
 
 	&.animate {
-		.section__content__title {
+		.contacts__content__title {
 			opacity: 1;
 			transform: translateY(0);
 		}
 
-		.section__content__text {
+		.contacts__content__text {
 			opacity: 1;
 			transform: translateY(0);
 		}
