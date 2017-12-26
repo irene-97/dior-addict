@@ -18,7 +18,7 @@ require('../components/Univers/Univers.css');
 require('../components/common/common.js');
 require('../components/navigation/navigation.js');
 require('../components/fullpage/fullpage.js');
-require('../components/section-1/section-1.js');
+require('../components/home/home.js');
 require('../components/section-2/section-2.js');
 require('../components/section-3/section-3.js');
 require('../components/section-4/section-4.js');
