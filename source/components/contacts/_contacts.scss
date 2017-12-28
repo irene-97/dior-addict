@@ -74,6 +74,7 @@
 						width: 64px;
 						height: 81px;
 						background: url("screen6-pin.png") center no-repeat;
+						background-size: contain;
 						transform: translate(-50%, -50%);
 
 						@media (max-height: 830px) {
