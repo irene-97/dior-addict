@@ -21,6 +21,15 @@
 			transform: translateY(-30px);
 			opacity: 0;
 			transition: transform 0.6s ease 0.2s, opacity 0.6s ease 0.2s;
+
+			@media (max-height: 830px) {
+				margin-bottom: 22 / 830 * 100vh;
+				width: 435 / 830 * 100vh;
+				font-size: 75 / 830 * 100vh;
+				line-height: 65 / 830 * 100vh;
+				letter-spacing: -2 / 830 * 100vh;
+				transform: translateY(#{-30 / 830 * 100vh});
+			}
 		}
 
 		&__text {
@@ -31,6 +40,13 @@
 			transform: translateY(30px);
 			opacity: 0;
 			transition: transform 0.6s ease 0.2s, opacity 0.6s ease 0.2s;
+
+			@media (max-height: 830px) {
+				width: 435 / 830 * 100vh;
+				font-size: 17 / 830 * 100vh;
+				line-height: 24 / 830 * 100vh;
+				transform: translateY(#{30 / 830 * 100vh});
+			}
 		}
 
 		&__contacts {
@@ -59,6 +75,17 @@
 						height: 81px;
 						background: url("screen6-pin.png") center no-repeat;
 						transform: translate(-50%, -50%);
+
+						@media (max-height: 830px) {
+							width: 64 / 830 * 100vh;
+							height: 81 / 830 * 100vh;
+						}
+					}
+
+					@media (max-height: 830px) {
+						margin: 8 / 830 * 100vh;
+						width: 187 / 830 * 100vh;
+						height: 160 / 830 * 100vh;
 					}
 				}
 
@@ -71,6 +98,11 @@
 						font-size: 17px;
 						line-height: 24px;
 						color: $color-black;
+
+						@media (max-height: 830px) {
+							font-size: 17 / 830 * 100vh;
+							line-height: 24 / 830 * 100vh;
+						}
 					}
 
 					&__title {
@@ -82,12 +114,42 @@
 							color: $color-cranberry;
 						}
 					}
+
+					@media (max-height: 830px) {
+						padding: (47 / 830 * 100vh) (38 / 830 * 100vh) 0;
+					}
 				}
 
 				&:last-child {
 					margin-bottom: 0;
 				}
+
+				@media (max-height: 830px) {
+					margin-bottom: 32 / 830 * 100vh;
+					box-shadow: (2 / 830 * 100vh) (3 / 830 * 100vh) (7 / 830 * 100vh) rgba($color-black, 0.05);
+				}
 			}
+
+			@media (max-height: 830px) {
+				margin-top: 37 / 830 * 100vh;
+				width: 550 / 830 * 100vh;
+			}
+		}
+
+		@media (max-height: 950px) {
+			margin-top: 177px;
+		}
+
+		@media (max-height: 850px) {
+			margin-top: 100px;
+		}
+
+		@media (max-width: 1650px) {
+			margin-left: 100px;
+		}
+
+		@media (max-width: 1450px) {
+			margin-left: 30px;
 		}
 	}
 
@@ -101,5 +163,9 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
+	}
+
+	@media (max-width: 1450px) {
+		background-position: bottom right -200px;
 	}
 }

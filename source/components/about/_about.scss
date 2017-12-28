@@ -3,6 +3,12 @@
 .about {
 	display: flex;
 
+	&__col-1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&__col-2 {
 		display: flex;
 		align-items: center;
@@ -15,7 +21,6 @@
 	}
 
 	&__text {
-		margin-top: 442px;
 		margin-left: 217px;
 		width: 600px;
 
@@ -37,6 +42,14 @@
 			transform: translateY(30px);
 			opacity: 0;
 			transition: transform 0.6s ease 0.2s, opacity 0.6s ease 0.2s;
+		}
+
+		@media (max-width: 1700px) {
+			margin-left: 100px;
+		}
+
+		@media (max-width: 1370px) {
+			width: 500px;
 		}
 	}
 
@@ -129,30 +142,52 @@
 				top: 5px;
 				left: 50%;
 				transform: translateX(-50%);
+
+				@media (max-height: 1000px) {
+					top: 5 / 1000 * 100vh;
+				}
 			}
 
 			&:nth-child(2) {
 				right: 5px;
 				top: 50%;
 				transform: translateY(-50%);
+
+				@media (max-height: 1000px) {
+					right: 5 / 1000 * 100vh;
+				}
 			}
 
 			&:nth-child(3) {
 				bottom: 5px;
 				left: 50%;
 				transform: translateX(-50%);
+
+				@media (max-height: 1000px) {
+					bottom: 5 / 1000 * 100vh;
+				}
 			}
 
 			&:nth-child(4) {
 				left: 5px;
 				top: 50%;
 				transform: translateY(-50%);
+
+				@media (max-height: 1000px) {
+					left: 5 / 1000 * 100vh;
+				}
 			}
 
 			&--active {
 				&::before {
 					opacity: 1;
 				}
+			}
+
+			@media (max-height: 1000px) {
+				padding: 6 / 1000 * 100vh;
+				width: 20 / 1000 * 100vh;
+				height: 20 / 1000 * 100vh;
 			}
 		}
 
@@ -163,6 +198,10 @@
 			height: 100%;
 			box-shadow: inset 0 0 150px 5px #fe9aa5;
 			background-color: #ffe9eb;
+
+			@media (max-height: 1000px) {
+				box-shadow: inset 0 0 (150 / 1000 * 100vh) (5 / 1000 * 100vh) #fe9aa5;
+			}
 		}
 
 		&__item {
@@ -181,11 +220,33 @@
 			transition: opacity 0.5s, visibility 0.5s;
 			will-change: opacity, visibility;
 			background: no-repeat center;
+			background-size: auto 70%;
 
 			&--active {
 				opacity: 1;
 				visibility: visible;
 			}
+
+			@media (max-height: 1000px) {
+				font-size: 100 / 1000 * 100vh;
+			}
+		}
+
+		@media (max-height: 1000px) {
+			margin-right: 137 / 1000 * 100vh;
+			padding: 30 / 1000 * 100vh;
+			width: 780 / 1000 * 100vh;
+			height: 780 / 1000 * 100vh;
+			box-shadow: 0 0 (20 / 1000 * 100vh) 0 rgba($color-black, 0.15);
+		}
+
+		@media (max-width: 1700px) {
+			transform: scale(0.75);
+			transform-origin: 50% 50%;
+		}
+
+		@media (max-width: 1370px) {
+			transform: scale(0.5);
 		}
 	}
 

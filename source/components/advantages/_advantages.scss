@@ -25,12 +25,24 @@
 			background-size: cover;
 			background-clip: border-box;
 		}
+
+		@media (max-width: 1600px) {
+			transform: scale(0.75);
+			transform-origin: 0 50%;
+		}
+
+		@media (max-width: 1500px) {
+			transform: scale(0.5);
+		}
 	}
 
 	&__description-slider {
-		margin-top: 382px;
+		position: absolute;
+		right: 50px;
+		top: 50%;
 		margin-right: 198px;
 		width: 600px;
+		transform: translateY(-50%);
 
 		&__slide {
 			padding-top: 20px;
@@ -59,6 +71,18 @@
 					margin-bottom: 24px;
 				}
 			}
+		}
+
+		@media (max-width: 1800px) {
+			width: 550px;
+		}
+
+		@media (max-width: 1700px) {
+			width: 450px;
+		}
+
+		@media (max-width: 1400px) and (min-height: 900px) {
+			width: 400px;
 		}
 	}
 
