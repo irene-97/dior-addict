@@ -1,6 +1,5 @@
 require('./_fullpage.scss');
-
-$(document).ready(() => {
+if (innerWidth > 1300) {
 	$('.fullpage').fullpage({
 		anchors: ['home', 'assortment', 'about', 'articles', 'advantages', 'contacts'],
 		menu: '.navigation',
@@ -14,4 +13,4 @@ $(document).ready(() => {
 			}, 0);
 		},
 	});
-});
+}

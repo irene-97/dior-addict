@@ -71,4 +71,8 @@
 		opacity: 1;
 		visibility: visible;
 	}
+
+	@media (max-width: 1300px) {
+		display: none;
+	}
 }

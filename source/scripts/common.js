@@ -24,3 +24,4 @@ require('../components/about/about.js');
 require('../components/articles/articles.js');
 require('../components/advantages/advantages.js');
 require('../components/contacts/contacts.js');
+require('../components/stub/stub.js');

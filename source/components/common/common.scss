@@ -3,13 +3,21 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: $font-family-helvetica-neue;
+	font-family: $font-family-helvetica-neue;
+}
+
+@media (max-width: 1300px) {
+	html,
+	body {
+		width: 100%;
+		height: 100%;
+	}
 }
