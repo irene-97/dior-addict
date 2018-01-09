@@ -817,20 +817,20 @@ html.fp-enabled,
   display: none; }
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url(/fonts/HelveticaNeueCyr-Light.woff2) format("woff2"), url(/fonts/HelveticaNeueCyr-Light.woff) format("woff");
+  src: url(fonts/HelveticaNeueCyr-Light.woff2) format("woff2"), url(fonts/HelveticaNeueCyr-Light.woff) format("woff");
   font-weight: 300;
   font-style: normal; }
 /*Light - 100*/
 @font-face {
   font-family: 'Univers';
-  src: url(/fonts/Univers-Light-Normal.woff2) format("woff2"), url(/fonts/Univers-Light-Normal.woff) format("woff");
+  src: url(fonts/Univers-Light-Normal.woff2) format("woff2"), url(fonts/Univers-Light-Normal.woff) format("woff");
   font-weight: 300;
   font-style: normal; }
 
 /*Regular - 400*/
 @font-face {
   font-family: 'Univers';
-  src: url(/fonts/Univers.woff2) format("woff2"), url(/fonts/Univers.woff) format("woff");
+  src: url(fonts/Univers.woff2) format("woff2"), url(fonts/Univers.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
 *,
@@ -933,7 +933,7 @@ body {
     display: none; } }
 .home {
   height: 100%;
-  background: url(/images/screen1.jpg) center no-repeat;
+  background: url(images/screen1.jpg) center no-repeat;
   background-size: cover; }
   .home__content {
     position: absolute;
@@ -982,7 +982,7 @@ body {
       margin-top: 3px;
       width: 27px;
       height: 14px;
-      background: url(/images/arrow-down.png);
+      background: url(images/arrow-down.png);
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
@@ -997,7 +997,7 @@ body {
             transform: translateX(-50%) translateY(0); }
 .assortment {
   height: 100%;
-  background: url(/images/screen2.png) bottom right no-repeat; }
+  background: url(images/screen2.png) bottom right no-repeat; }
   .assortment .fp-tableCell {
     vertical-align: top; }
   .assortment__categories {
@@ -1253,7 +1253,7 @@ body {
       padding-right: 87px; }
       .assortment .slick-arrow.slick-prev::before {
         left: 0;
-        background-image: url(/images/pink-arrow-left.png); }
+        background-image: url(images/pink-arrow-left.png); }
       .assortment .slick-arrow.slick-prev:after {
         content: "Previous color";
         font-size: 19px;
@@ -1271,7 +1271,7 @@ body {
       padding-left: 87px; }
       .assortment .slick-arrow.slick-next::before {
         right: 0;
-        background-image: url(/images/pink-arrow-right.png); }
+        background-image: url(images/pink-arrow-right.png); }
       .assortment .slick-arrow.slick-next:after {
         content: "Next color";
         font-size: 19px;
@@ -1713,12 +1713,12 @@ body {
     left: 327px; }
     .articles .slick-arrow.slick-prev::before {
       margin-left: -2px;
-      background: url(/images/screen4-pink-arrow-left.png); }
+      background: url(images/screen4-pink-arrow-left.png); }
   .articles .slick-arrow.slick-next {
     right: 327px; }
     .articles .slick-arrow.slick-next::before {
       margin-left: 3px;
-      background: url(/images/screen4-pink-arrow-right.png); }
+      background: url(images/screen4-pink-arrow-right.png); }
 
 .articles.animate .articles__slide__wrapper {
   opacity: 1;
@@ -1726,7 +1726,7 @@ body {
       -ms-transform: translateY(0);
           transform: translateY(0); }
 .advantages {
-  background: url(/images/screen5.png) center no-repeat;
+  background: url(images/screen5.png) center no-repeat;
   background-size: cover; }
   .advantages .fp-tableCell {
     display: -webkit-box;
@@ -1851,12 +1851,12 @@ body {
       left: -141px; }
       .advantages .slick-arrow.slick-prev::before {
         margin-left: -2px;
-        background: url(/images/screen5-pink-arrow-left.png); }
+        background: url(images/screen5-pink-arrow-left.png); }
     .advantages .slick-arrow.slick-next {
       right: -141px; }
       .advantages .slick-arrow.slick-next::before {
         margin-left: 3px;
-        background: url(/images/screen5-pink-arrow-right.png); }
+        background: url(images/screen5-pink-arrow-right.png); }
   .advantages.animate .advantages__description-slider__slide__title {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1868,7 +1868,7 @@ body {
         -ms-transform: translateY(0);
             transform: translateY(0); }
 .contacts {
-  background: url(/images/screen6.png) bottom right no-repeat; }
+  background: url(images/screen6.png) bottom right no-repeat; }
   .contacts .fp-tableCell {
     vertical-align: top; }
   .contacts__content {
@@ -1946,7 +1946,7 @@ body {
             display: block;
             width: 64px;
             height: 81px;
-            background: url(/images/screen6-pin.png) center no-repeat;
+            background: url(images/screen6-pin.png) center no-repeat;
             background-size: contain;
             -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
